@@ -1,0 +1,18 @@
+{
+  "drinks": [
+    {
+      "name": "Rum & Coke",
+      "ingredients": {
+        "rum": 50,
+        "coke": 150
+      }
+    },
+    {
+      "name": "Gin & Tonic",
+      "ingredients": {
+        "gin": 50,
+        "tonic": 150
+      }
+    }
+  ]
+}
