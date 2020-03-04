@@ -4,11 +4,13 @@
 
  **/
 
+const Gpio = require('onoff').Gpio;
+
 exports.initializePins = function(pumpData) {
     for(let pumps in pumpData) {
         // noinspection JSUnfilteredForInLoop
         let eachPump = pumpData[pumps];
-        //new Gpio(eachPump['pin'], 'out')
+        new Gpio(eachPump['pin'], 'out')
     }
 };
 
