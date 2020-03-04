@@ -20,12 +20,9 @@ exports.pourDrink = function (pins, quantity, pumpData) {
             if(allPins[i] === pins[j]) {
                 FLOW_RATE = FLOW_RATE/quantity[j];
                 console.log("FLOW " + FLOW_RATE);
-                //allPins[i].writeSync(1);
-                //sleep(FLOW_RATE);
-                //allPins[i].writeSync(0);
-                console.log("WOW " + Date.now());
+                allPins[i].writeSync(1);
                 sleep(FLOW_RATE);
-                console.log("STOP " + Date.now());
+                allPins[i].writeSync(0);
             }
         }
     }
